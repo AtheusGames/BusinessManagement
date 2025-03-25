@@ -13,7 +13,7 @@ from handlers.commands import command_menu
 from models.status import StatusType
 import handlers.keyboards as keyboards
 
-from data_statistics.deffects_statistics import DeffectsStaticts
+from data_statistics.defects_statistics import DeffectsStaticts
 from data_statistics.income_statistics import IncomeStatistics
 from data_statistics.users_statistics import UsersStatistics
 from data_statistics.models_statistics import ModelsStatistics

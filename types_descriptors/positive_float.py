@@ -23,18 +23,18 @@ class PositiveFloat:
             max_value: not required
         """
 
-    def __init__(self, can_be_none:bool=False, min_value:int = None, max_value:int = None):
+    def __init__(self, can_be_none: bool = False, min_value: int = None, max_value: int = None):
         self.__min = min_value
         self.__max = max_value
         self.__can_be_none = can_be_none
 
-    def __set_name__(self, owner, name:str):
+    def __set_name__(self, owner, name: str):
         self.__name = '_' + name
 
-    def __get__(self, instance, owner) -> int:
+    def __get__(self, instance, owner) -> float:
         return getattr(instance, self.__name)
 
-    def __set__(self, instance, value:float):
+    def __set__(self, instance, value: float):
         if self.__can_be_none and value is None:
             pass
         else:

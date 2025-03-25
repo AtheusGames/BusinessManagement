@@ -12,7 +12,7 @@ from data_statistics.html_manager.html_body import get_html_body
 
 from data_statistics.income_statistics import IncomeStatistics
 from data_statistics.models_statistics import ModelsStatistics
-from data_statistics.deffects_statistics import DeffectsStaticts
+from data_statistics.defects_statistics import DeffectsStaticts
 from data_statistics.users_statistics import UsersStatistics
 
 

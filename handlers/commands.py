@@ -39,7 +39,7 @@ class CommandsState(StatesGroup):
 async def command_add_phones(message: Message):
     await send_backup(message.from_user.id)
     if logging.getLogger().isEnabledFor(logging.DEBUG):
-        await add_random_phones_to_database(1000)
+        await add_random_phones_to_database(50000)
 
 @router.message(CommandStart())
 @delete_message

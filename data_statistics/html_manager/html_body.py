@@ -1,6 +1,6 @@
 from data_statistics.income_statistics import IncomeStatistics
 from data_statistics.models_statistics import ModelsStatistics
-from data_statistics.deffects_statistics import DeffectsStaticts
+from data_statistics.defects_statistics import DeffectsStaticts
 from data_statistics.users_statistics import UsersStatistics
 
 from UI import UI_statistics

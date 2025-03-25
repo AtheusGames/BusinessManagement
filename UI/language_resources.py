@@ -345,9 +345,9 @@ class LanguageResources:
         attrs = ''
         path = SETTINGS_PATH / Path('language.json')
         if path.exists():
-            with open(path, 'r') as file:
+            with open(path, 'r', encoding="utf-8") as file:
                 attrs = json.loads(file.read())
             [self.__setattr__(key, value) for key, value in attrs.items()]
         else:
-            with open(path, 'w') as file:
+            with open(path, 'w', encoding="utf-8") as file:
                 file.write(json.dumps(self.__dict__, indent=4))
